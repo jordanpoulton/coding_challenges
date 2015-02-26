@@ -14,3 +14,12 @@ def factorial(n)
   return result
 end
 #===========
+
+#Rob and Gus
+
+def factorial(n)
+  fact = 1
+  (1..n).reverse_each {|i| fact *= i}
+  return fact
+end
+#===========
