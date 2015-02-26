@@ -46,3 +46,18 @@ def nth_prime(n)
   return num - 1
 end
 #===========
+
+#Gus
+
+def nth_prime(n)
+  count = 0
+  pointer = 1
+  while count < n
+    pointer += 1
+    if is_prime?(pointer)
+      count += 1
+    end
+  end
+
+  return pointer
+end
