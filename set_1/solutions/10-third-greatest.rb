@@ -1,3 +1,8 @@
+# Dan & Ilya
+def third_greatest(nums)
+  nums.sort[-3]
+end
+
 #Jordan
 def third_greatest(nums)
   first = nil
@@ -23,14 +28,11 @@ def third_greatest(nums)
 
   return third
 end
-#===========
 
 # Joe & Mark
 def third_greatest(nums)
   nums.sort![-3]
 end
-
-#===========
 
 # Gus and Rob
 
@@ -38,3 +40,4 @@ def third_greatest(nums)
   nums.sort!
   nums[-3]
 end
+
