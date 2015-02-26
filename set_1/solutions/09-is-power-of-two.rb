@@ -1,3 +1,17 @@
+# Ilya & Dan
+
+def is_power_of_two?(num)
+  while num > 1
+    if num % 2 == 0
+      num /= 2
+    else
+      return false
+    end
+  end
+  num == 0 ? false : true
+end
+
+
 #Jordan
 
 def is_power_of_two?(num)
@@ -15,7 +29,7 @@ def is_power_of_two?(num)
     end
   end
 end
-#===========
+
 #Mark and Joe
 def is_power_of_two?(num)
   num = num.to_f
@@ -25,4 +39,3 @@ def is_power_of_two?(num)
   end
   root.to_i ** 2 == num
 end
-#=============
