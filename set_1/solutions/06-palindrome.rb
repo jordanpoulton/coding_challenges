@@ -12,3 +12,9 @@ def palindrome?(string)
   return true
 end
 #===========
+
+# Joe & Mark
+def palindrome?(string)
+  string == string.reverse
+end
+
