@@ -24,6 +24,13 @@ puts(
   'factorial(4) == 24: ' + (factorial(4) == 24).to_s
 )
 
+#Rob and Gus
+
+def factorial(n)
+  fact = 1
+  (1..n).reverse_each {|i| fact *= i}
+  return fact
+#=======
 #Mark & Joe
 
 def factorial(n)
@@ -36,6 +43,7 @@ def factorial(n)
     end
     return results
   end
+
 end
 
 
