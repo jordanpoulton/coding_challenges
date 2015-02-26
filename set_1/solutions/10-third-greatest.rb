@@ -33,3 +33,11 @@ end
 def third_greatest(nums)
   nums.sort![-3]
 end
+
+# Gus and Rob
+
+def third_greatest(nums)
+  nums.sort!
+  nums[-3]
+end
+
