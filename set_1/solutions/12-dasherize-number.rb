@@ -52,3 +52,36 @@ def dasherize_number(num)
 end
 
 #=========
+
+def dasherize_number(num)
+  digits = []
+  while num > 0
+    digits.unshift(num % 10)
+    num = num / 10
+  end
+
+  return_string = ""
+
+  last_odd = false
+
+  (0...digits.length).each do |i|
+    if digits[i] % 2 == 1
+      if i == 0
+        return_string = digits[i].to_s + "-"
+      elsif i == digits.length - 1 && return_string[-1] != "-"
+        return_string = return_string + "-" + digits[i].to_s
+      elsif i == digits.length - 1 && return_string[-1] == "-"
+        return_string = return_string + digits[i].to_s
+      elsif return_string[-1] == "-"
+        return_string = return_string + digits[i].to_s + "-"
+      else
+        return_string = return_string + "-" + digits[i].to_s + "-"
+      end
+    else
+      return_string += digits[i].to_s
+    end
+  end
+
+return return_string
+
+end
