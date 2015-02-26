@@ -6,8 +6,8 @@
 # Difficulty: easy.
 
 def reverse(string)
-end
 
+end
 # These are tests to check that your code is working. After writing
 # your solution, they should all print true.
 
@@ -20,3 +20,5 @@ puts(
 puts(
   'reverse("") == "": ' + (reverse("") == "").to_s
 )
+
+
