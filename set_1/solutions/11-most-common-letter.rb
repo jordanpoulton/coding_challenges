@@ -26,7 +26,7 @@ def most_common_letter(string)
 
   return [most_common_letter, most_common_letter_count]
 end
-#===========
+
 
 #Mark and Joe
 def most_common_letter(string)
@@ -37,7 +37,14 @@ def most_common_letter(string)
   end
   count.sort_by{ |letter, number| number }[-1]
 end
-#=======================
+
+# Ilya & Dan
+
+def most_common_letter(string)
+  freq = Hash.new(0)
+  string.chars { |ch| freq[ch] += 1 }
+  [freq.select { |k,v| v == freq.values.max }.keys[0],
+      freq.select { |k,v| v == freq.values.max }.values[0]]
 
 #Rob and Gus
 def most_common_letter(string)
