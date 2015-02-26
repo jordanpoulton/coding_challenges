@@ -38,3 +38,11 @@ def most_common_letter(string)
   count.sort_by{ |letter, number| number }[-1]
 end
 #=======================
+
+#Rob and Gus
+def most_common_letter(string)
+  count = Hash.new(0)
+  string.chars.map {|i| count[i] += 1}
+  freq = count.sort_by {|k, v| v}
+  freq.last
+end
