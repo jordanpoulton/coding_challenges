@@ -14,3 +14,15 @@ def count_vowels(string)
   return num_vowels
 end
 #===========
+#Mark & Joe
+def count_vowels(string)
+  string = string.split('')
+  count = 0
+  string.each do |letter|
+    if letter == "a" || letter == "e" || letter == "i" || letter == "o" || letter == "u"
+      count += 1
+    end
+  end
+  count
+end
+#=======
