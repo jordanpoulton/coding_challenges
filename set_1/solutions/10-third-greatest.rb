@@ -24,3 +24,10 @@ def third_greatest(nums)
   return third
 end
 #===========
+
+# Joe & Mark
+def third_greatest(nums)
+  nums.sort![-3]
+end
+
+#===========
