@@ -15,6 +15,7 @@ end
 # These are tests to check that your code is working. After writing
 # your solution, they should all print true.
 
+
 puts(
   'reverse("abc") == "cba": ' + (reverse("abc") == "cba").to_s
 )
@@ -24,3 +25,4 @@ puts(
 puts(
   'reverse("") == "": ' + (reverse("") == "").to_s
 )
+
