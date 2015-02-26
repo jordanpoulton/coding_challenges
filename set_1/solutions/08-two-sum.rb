@@ -1,44 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #Jordan
 def two_sum(nums)
   idx1 = 0
@@ -75,4 +34,20 @@ def two_sum(nums)
 end
 
 #===========
+
+# Gus and Rob
+
+  positions = []
+  (0...nums.length).each do |i|
+    ((i+1)...nums.length).each do |j|
+      if nums[i] + nums[j] == 0
+        positions.push(i,j)
+      end
+    end
+  end
+  if positions.length != 0
+    return positions
+  else
+    return nil
+  end
 
