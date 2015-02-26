@@ -17,3 +17,23 @@ def greatest_common_factor(number1, number2)
   end
 end
 #===========
+
+# Joe & Mark
+def greatest_common_factor(number1, number2)
+  factors_of_num1 = []
+  factors_of_both = []
+  (1..number1).each do |num|
+    if number1 % num == 0
+      factors_of_num1.push(num)
+    end
+  end
+  factors_of_num1.each do |num|
+    if number2 % num == 0
+      factors_of_both.push(num)
+    end
+  end
+  factors_of_both[-1]
+end
+
+#===========
+
