@@ -27,3 +27,14 @@ def most_common_letter(string)
   return [most_common_letter, most_common_letter_count]
 end
 #===========
+
+#Mark and Joe
+def most_common_letter(string)
+  count = Hash.new(0)
+  string = string.split('')
+  string.each do |letter|
+    count[letter] += 1
+  end
+  count.sort_by{ |letter, number| number }[-1]
+end
+#=======================
