@@ -29,3 +29,15 @@ def longest_word(sentence)
   word
 end
 
+# Jade & Ichi
+
+def longest_word(sentence)
+  list = sentence.split(' ')
+  longest_word = ""
+  list.each do |word|
+    if word.length > longest_word.length
+      longest_word = word
+    end
+  end
+  return longest_word
+end
