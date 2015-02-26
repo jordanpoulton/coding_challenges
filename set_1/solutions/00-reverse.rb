@@ -28,7 +28,7 @@ def reverse(string)
   r_string = ""
   (0...string.length).each {|i| r_string = r_string + chars.pop()}
   return r_string
-
+end
 
 # Joe & Mark
 def reverse(string)
@@ -47,5 +47,15 @@ def reverse(string)
   b = []
   a.each { |c| b.unshift(c) }
   b.join("")
+end
+
+# Jade & Ichi
+def reverse(string)
+  list = string.split('')
+  new_list = []
+  len = list.length
+  len.times do
+    new_list << list.pop
+  end
 end
 
