@@ -30,7 +30,7 @@ def is_power_of_two?(num)
   end
 end
 
-#Mark and Joe
+#Mark and Joe - THIS IS ACTUALLY TESTING IF NUM IS A SQUARE NUMBER, RATHER THAN A POWER OF 2!
 def is_power_of_two?(num)
   num = num.to_f
   root = Math.sqrt(num)
