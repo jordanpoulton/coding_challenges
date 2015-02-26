@@ -26,3 +26,9 @@ def capitalize_words(string)
   result.join(' ')
 end
 #===========
+
+#Rob and Gus
+def capitalize_words(string)
+  words = string.split(' ')
+  return words.collect(&:capitalize).join(' ')
+end
