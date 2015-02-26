@@ -30,7 +30,7 @@ def factorial(n)
   fact = 1
   (1..n).reverse_each {|i| fact *= i}
   return fact
-#=======
+  
 #Mark & Joe
 
 def factorial(n)

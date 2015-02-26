@@ -20,7 +20,6 @@ puts(
   'reverse("") == "": ' + (reverse("") == "").to_s
 )
 
-#===========
 #Rob and Gus
 
 def reverse(string)
@@ -30,7 +29,6 @@ def reverse(string)
   (0...string.length).each {|i| r_string = r_string + chars.pop()}
   return r_string
 
-#=======
 
 # Joe & Mark
 def reverse(string)
