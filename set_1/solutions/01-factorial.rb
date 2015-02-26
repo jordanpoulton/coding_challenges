@@ -61,3 +61,14 @@ def factorial(n)
   end
   return result
 end
+# Jade & Iciar
+def factorial(n)
+ return 1 if n <=1
+
+ result = n
+ while n > 1
+   result *= n -1
+   n -= 1
+ end
+ return result
+end
