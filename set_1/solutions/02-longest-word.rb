@@ -6,15 +6,6 @@
 #
 # Difficulty: easy.
 
-def longest_word(sentence)
-  arr = sentence.split(" ")
-  word = ""
-  arr.each do |i|
-    word = i if i.length > word.length
-  end
-  word
-end
-
 # These are tests to check that your code is working. After writing
 # your solution, they should all print true.
 
@@ -30,3 +21,20 @@ puts(
   'longest_word("abc def abcde") == "abcde": ' +
   (longest_word('abc def abcde') == 'abcde').to_s
 )
+
+# Joe & Mark
+def longest_word(sentence)
+  sentence = sentence.split(' ')
+  sentence = sentence.sort_by{|x| x.length}
+  sentence.last
+end
+
+# Dan & Ilya
+def longest_word(sentence)
+  arr = sentence.split(" ")
+  word = ""
+  arr.each do |i|
+    word = i if i.length > word.length
+  end
+  word
+end
