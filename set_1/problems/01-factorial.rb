@@ -6,6 +6,9 @@
 # Difficulty: easy.
 
 def factorial(n)
+  fact = 1
+  (1..n).reverse_each {|i| fact *= i}
+  return fact
 end
 
 # These are tests to check that your code is working. After writing
