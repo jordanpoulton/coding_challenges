@@ -11,3 +11,14 @@ def sum_nums(num)
   return result
 end
 #===========
+
+#Mark & Joe
+def sum_nums(num)
+  result = 0
+  (0..num).each do |x|
+    result += x
+  end
+  result
+end
+
+#=========
