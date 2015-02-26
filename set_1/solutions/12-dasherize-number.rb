@@ -22,3 +22,33 @@ def dasherize_number(num)
   return result
 end
 #===========
+
+# Joe & Mark
+def dasherize_number(num)
+  num = num.to_s.split('')
+  fresh = []
+
+  num.each do |x|
+    if x.to_i % 2 == 1
+      if fresh[-1] != '-'
+        fresh.push("-")
+      end
+      fresh.push(x)
+      fresh.push("-")
+    else
+      fresh.push(x)
+    end
+  end
+
+  if fresh[0] == '-'
+    fresh.shift
+  end
+
+  if fresh[-1] == '-'
+    fresh.pop
+  end
+
+  fresh.join
+end
+
+#=========
