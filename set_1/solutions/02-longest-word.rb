@@ -20,3 +20,12 @@ def longest_word(sentence)
   return longest_word
 end
 #===========
+
+# Joe & Mark
+
+def longest_word(sentence)
+  sentence = sentence.split(' ')
+  sentence = sentence.sort_by{|x| x.length}
+  sentence.last
+end
+
