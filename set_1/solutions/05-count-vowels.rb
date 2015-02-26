@@ -26,3 +26,16 @@ def count_vowels(string)
   count
 end
 #=======
+
+#Rob and Gus
+def count_vowels(string)
+  chars = string.chars.map {|i| i}
+  count = 0
+  chars.each do |x|
+    if x =~ /(a|e|i|o|u)/
+      count += 1
+    end
+  end
+
+  return count
+end
