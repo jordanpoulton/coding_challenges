@@ -4,19 +4,7 @@
 #
 # Difficulty: easy.
 
-def count_vowels(string)
-  vowels= "aeiou"
-  vowel_count = 0
-  string.chars do |ch|
-    vowels.chars do |vowel|
-      if ch == vowel
-        vowel_count += 1
-        break
-      end
-    end
-  end
-  vowel_count
-end
+
 
 # These are tests to check that your code is working. After writing
 # your solution, they should all print true.
@@ -33,22 +21,21 @@ puts('count_vowels("cecilia") == 4: ' + (count_vowels('cecilia') == 4).to_s)
 
 
 
+# Ilya & Dan
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+def count_vowels(string)
+  vowels= "aeiou"
+  vowel_count = 0
+  string.chars do |ch|
+    vowels.chars do |vowel|
+      if ch == vowel
+        vowel_count += 1
+        break
+      end
+    end
+  end
+  vowel_count
+end
 
 
 #Mark & Joe
@@ -61,4 +48,17 @@ def count_vowels(string)
     end
   end
   count
+end
+
+
+#Rob and Gus
+def count_vowels(string)
+  chars = string.chars.map {|i| i}
+  count = 0
+  chars.each do |x|
+    if x =~ /(a|e|i|o|u)/
+      count += 1
+    end
+  end
+  return count
 end

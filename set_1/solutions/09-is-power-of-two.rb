@@ -16,3 +16,13 @@ def is_power_of_two?(num)
   end
 end
 #===========
+#Mark and Joe
+def is_power_of_two?(num)
+  num = num.to_f
+  root = Math.sqrt(num)
+  if num == 0
+    return false
+  end
+  root.to_i ** 2 == num
+end
+#=============
