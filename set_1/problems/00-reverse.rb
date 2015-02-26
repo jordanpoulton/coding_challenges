@@ -6,6 +6,11 @@
 # Difficulty: easy.
 
 def reverse(string)
+  #chars = string.split("")
+  chars = string.chars.map {|i| i}
+  r_string = ""
+  (0...string.length).each {|i| r_string = r_string + chars.pop()}
+  return r_string
 end
 
 # These are tests to check that your code is working. After writing
