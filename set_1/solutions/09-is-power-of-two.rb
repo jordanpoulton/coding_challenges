@@ -39,3 +39,20 @@ def is_power_of_two?(num)
   end
   root.to_i ** 2 == num
 end
+
+#Rob and Gus
+def is_power_of_two?(num)
+  if num < 1
+    return false
+  end
+
+  while num > 1
+    if num % 2 == 0
+      num /= 2
+    else
+      return false
+    end
+  end
+
+  return true
+end

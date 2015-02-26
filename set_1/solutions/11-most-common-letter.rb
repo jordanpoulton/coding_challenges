@@ -45,4 +45,11 @@ def most_common_letter(string)
   string.chars { |ch| freq[ch] += 1 }
   [freq.select { |k,v| v == freq.values.max }.keys[0],
       freq.select { |k,v| v == freq.values.max }.values[0]]
+
+#Rob and Gus
+def most_common_letter(string)
+  count = Hash.new(0)
+  string.chars.map {|i| count[i] += 1}
+  freq = count.sort_by {|k, v| v}
+  freq.last
 end
