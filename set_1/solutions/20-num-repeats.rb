@@ -37,3 +37,21 @@ def num_repeats(string)
   return num_repeats
 end
 #===========
+
+# Joe & Mark
+def num_repeats(string)
+  count = Hash.new(0)
+  string = string.split('')
+  string.each do |letter|
+    count[letter] += 1
+  end
+  counter = 0
+  count.each do |letter, count|
+    if count > 1
+      counter += 1
+    end
+  end
+  counter
+end
+
+#===========
