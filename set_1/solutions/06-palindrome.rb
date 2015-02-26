@@ -1,4 +1,9 @@
-#Jordan
+# Dan & Ilya
+def palindrome?(string)
+  string == string.reverse
+end
+
+# Whose solutions is this?
 def palindrome?(string)
   i = 0
   while i < string.length
@@ -11,7 +16,6 @@ def palindrome?(string)
 
   return true
 end
-#===========
 
 # Joe & Mark
 def palindrome?(string)
