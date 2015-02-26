@@ -17,3 +17,13 @@ def is_prime?(number)
   return true
 end
 #===========
+#Mark 'n' Joe
+def is_prime?(number)
+  (2...number).each do |factor|
+    if number % factor == 0
+      return false
+    end
+  end
+  return true
+end
+#######==#≠#≠#≠#≠#≠#≠#≠##≠≠≠≠≠≠≠≠≠≠≠#====
