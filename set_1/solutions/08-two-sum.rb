@@ -1,43 +1,17 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Dan & Ilya
+def two_sum(nums)
+  res = []
+  nums.each do |i|
+    nums.each do |c|
+      if i + c == 0
+        res << nums.index(i) 
+        res << nums.index(c)
+      end
+      break if res != []
+    end
+  end
+  res == [] ? nil : res
+end
 
 #Jordan
 def two_sum(nums)
@@ -57,7 +31,6 @@ def two_sum(nums)
 
   return nil
 end
-#===========
 
 # Joe & Mark
 def two_sum(nums)
@@ -73,6 +46,3 @@ def two_sum(nums)
   end
   return nil
 end
-
-#===========
-
