@@ -17,3 +17,21 @@ def two_sum(nums)
   return nil
 end
 #===========
+
+# Joe & Mark
+def two_sum(nums)
+  result = []
+  nums.each do |x|
+    nums.each do |y|
+      if x + y == 0
+        result.push(nums.index(x))
+        result.push(nums.index(y))
+        return result
+      end
+    end
+  end
+  return nil
+end
+
+#===========
+
