@@ -7,7 +7,6 @@
 # Difficulty: easy.
 
 def factorial(n)
-
 end
 
 # These are tests to check that your code is working. After writing
@@ -29,5 +28,5 @@ puts(
   'factorial(4) == 24: ' + (factorial(4) == 24).to_s
 ) # 4 * 3 * 2 * 1
 
-# n = 5  
+# n = 5
 # 5 * 4 * 3 * 2 * 1

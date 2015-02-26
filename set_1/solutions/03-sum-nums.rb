@@ -19,5 +19,14 @@ def sum_nums(num)
   (0..num).inject {|x, i| x += i}
 end
 
+# Jade & Ichi
+def sum_nums(num)
+  integer = 0
+  (0..num).each do |x|
+    integer += x
+  end
+  return integer
+end
+
 
 

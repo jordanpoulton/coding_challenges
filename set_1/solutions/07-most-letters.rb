@@ -50,3 +50,13 @@ def nearby_az(string)
   end
 end
 #===============
+#Rob and Gus
+
+def nearby_az(string)
+  # if string =~ /(a..z|a.z|az)/
+  #   return true
+  # end
+
+  # return false
+  (string =~ /(a..z|a.z|az)/) != nil
+end

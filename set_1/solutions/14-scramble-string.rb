@@ -11,3 +11,15 @@ def scramble_string(string, positions)
   return result
 end
 #===========
+
+# Joe & Mark
+def scramble_string(string, positions)
+  string = string.split('')
+  result = []
+  positions.each do |index|
+    result.push(string[index])
+  end
+  result.join('')
+end
+
+#===========
