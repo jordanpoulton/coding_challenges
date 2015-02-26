@@ -21,4 +21,3 @@ def reverse(string)
   end
   reverse_string.join('')
 end
-
