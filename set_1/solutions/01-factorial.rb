@@ -14,3 +14,18 @@ def factorial(n)
   return result
 end
 #===========
+
+#Mark & Joe
+
+def factorial(n)
+  if n == 0
+    return 1
+  else
+    results = 1
+    (1..n).each do |x|
+      results *= x
+    end
+    return results
+  end
+end
+#===========
