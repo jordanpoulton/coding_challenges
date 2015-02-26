@@ -16,8 +16,8 @@ end
 def scramble_string(string, positions)
   string = string.split('')
   result = []
-  string.each_with_index do |letter, i|
-    result[positions[i]] = letter
+  positions.each do |index|
+    result.push(string[index])
   end
   result.join('')
 end
