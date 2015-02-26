@@ -21,7 +21,7 @@ def dasherize_number(num)
 
   return result
 end
-#===========
+
 
 # Joe & Mark
 def dasherize_number(num)
@@ -51,7 +51,21 @@ def dasherize_number(num)
   fresh.join
 end
 
-#=========
+
+# Iciar & Dan
+
+def dasherize_number(num)
+  result = num.to_s.chars.map! do |n|
+    !(n.to_i % 2 == 0) ? n = "-#{n}-" : n = n
+  end.join
+  result[-1] = "" if result[-1] == "-"
+  result[0] = "" if result[0] == "-"
+  result.chars.each_index do |i|
+    result[i] = "" if result[i] == "-" && result[i+1] == "-"
+  end
+result
+end
+
 
 def dasherize_number(num)
   digits = []
@@ -85,3 +99,4 @@ def dasherize_number(num)
 return return_string
 
 end
+
