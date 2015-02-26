@@ -1,3 +1,22 @@
+# Ilya & Dan
+
+def nearby_az(string)
+  result = false
+  arr = string.split("")
+  arr.each do |ch|
+    if ch == "a"
+      (arr.index(ch)..arr.index(ch)+3).each do |three|
+        if arr[three] == "z"
+          result = true
+          break
+        end
+      end
+    end
+    break if result == true
+  end
+  return result
+end
+
 #Jordan
 def nearby_az(string)
   idx1 = 0
