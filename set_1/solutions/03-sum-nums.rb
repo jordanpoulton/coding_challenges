@@ -22,3 +22,10 @@ def sum_nums(num)
 end
 
 #=========
+
+#Rob and Gus
+def sum_nums(num)
+  sum = 0
+  (0..num).each {|i| sum += i}
+  return sum
+end
