@@ -29,6 +29,19 @@ def longest_word(sentence)
   sentence.last
 end
 
+# Rob & Gus
+
+def longest_word(sentence)
+  words = sentence.split(" ")
+  longest = words[0]
+  (1...words.length).each do |i|
+    if words[i].length >= longest.length
+      longest = words[i]
+    end
+  end
+  return longest
+end
+
 # Dan & Ilya
 def longest_word(sentence)
   arr = sentence.split(" ")
@@ -38,3 +51,4 @@ def longest_word(sentence)
   end
   word
 end
+
