@@ -27,3 +27,16 @@ def time_conversion(minutes)
   "#{hours}:#{minutes}"
 end
 
+# Rob & Gus
+
+def time_conversion(minutes)
+  h = minutes / 60
+  m = minutes % 60
+
+  if m == 0
+    m = "00"
+  end
+
+  return "#{h}:#{m}"
+
+end
