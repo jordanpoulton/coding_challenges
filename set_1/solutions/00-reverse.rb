@@ -1,25 +1,3 @@
-# Write a method that will take a string as input, and return a new
-# string with the same letters in reverse order.
-#
-# Don't use String's reverse method; that would be too simple.
-#
-# Difficulty: easy.
-
-
-# These are tests to check that your code is working. After writing
-# your solution, they should all print true.
-
-
-puts(
-  'reverse("abc") == "cba": ' + (reverse("abc") == "cba").to_s
-)
-puts(
-  'reverse("a") == "a": ' + (reverse("a") == "a").to_s
-)
-puts(
-  'reverse("") == "": ' + (reverse("") == "").to_s
-)
-
 #Rob and Gus
 
 def reverse(string)
@@ -28,7 +6,7 @@ def reverse(string)
   r_string = ""
   (0...string.length).each {|i| r_string = r_string + chars.pop()}
   return r_string
-
+end
 
 # Joe & Mark
 def reverse(string)
@@ -47,5 +25,15 @@ def reverse(string)
   b = []
   a.each { |c| b.unshift(c) }
   b.join("")
+end
+
+# Jade & Ichi
+def reverse(string)
+  list = string.split('')
+  new_list = []
+  len = list.length
+  len.times do
+    new_list << list.pop
+  end
 end
 
