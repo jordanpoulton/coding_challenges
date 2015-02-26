@@ -1,21 +1,17 @@
-#Jordan
-def time_conversion(minutes)
-  hours = 0
+# Write a method that will take in a number of minutes, and returns a
+# string that formats the number into `hours:minutes`.
+#
+# Difficulty: easy.
 
-  while minutes >= 60
-    hours += 1
-    minutes -= 60
-  end
 
-  if minutes < 10
-    minutes_s = "0" + minutes.to_s
-  else
-    minutes_s = minutes.to_s
-  end
 
-  return hours.to_s + ":" + minutes_s
-end
-#===========
+# These are tests to check that your code is working. After writing
+# your solution, they should all print true.
+
+puts('time_conversion(15) == "0:15": ' + (time_conversion(15) == '0:15').to_s)
+puts('time_conversion(150) == "2:30": ' + (time_conversion(150) == '2:30').to_s)
+puts('time_conversion(360) == "6:00": ' + (time_conversion(360) == '6:00').to_s)
+puts('time_conversion(7) == "0:07": ' + (time_conversion(7) == '0:07').to_s)
 
 # Joe & Mark
 def time_conversion(minutes)
@@ -39,4 +35,9 @@ def time_conversion(minutes)
 
   return "#{h}:#{m}"
 
+end
+
+# Dan & Ilya
+def time_conversion(minutes)
+  minutes%60 < 10 ? "#{minutes/60}:0#{minutes%60}" : "#{minutes/60}:#{minutes%60}"
 end
