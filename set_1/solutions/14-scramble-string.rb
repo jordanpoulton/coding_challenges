@@ -23,3 +23,13 @@ def scramble_string(string, positions)
 end
 
 #===========
+
+# Gus and Rob
+
+def scramble_string(string, positions)
+  rstr = ""
+  positions.each do |p|
+    rstr += string[p]
+  end
+  return rstr
+end
