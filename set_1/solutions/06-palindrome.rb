@@ -18,3 +18,9 @@ def palindrome?(string)
   string == string.reverse
 end
 
+# Gus & Rob
+
+def palindrome?(string)
+  string == string.reverse
+end
+
