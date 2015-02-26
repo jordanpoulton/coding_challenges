@@ -22,3 +22,12 @@ def nearby_az(string)
   return false
 end
 #===========
+#Mark and Joe
+def nearby_az(string)
+  if string =~ /a.{0,2}z/
+    true
+  else
+    false
+  end
+end
+#===============
