@@ -60,3 +60,18 @@ def nearby_az(string)
   # return false
   (string =~ /(a..z|a.z|az)/) != nil
 end
+
+# Ichi
+
+def nearby_az(string)
+  pos = 0
+  string.chars.each_with_index do |letter, index|
+    pos = index if letter == "a"
+  end
+
+  i = 0
+  while i <= pos + 3
+    return true if string[pos + i] == "z"
+    i += 1
+  end
+end
