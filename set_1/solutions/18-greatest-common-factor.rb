@@ -37,3 +37,14 @@ end
 
 #===========
 
+#Gus
+def greatest_common_factor(number1, number2)
+  pointer = [number1, number2].min
+  while pointer > 0
+    if number1 % pointer == 0 && number2 % pointer == 0
+      return pointer
+    else
+      pointer -= 1
+    end
+  end
+end
