@@ -56,3 +56,18 @@ def caesar_cipher(offset, string)
 
   return string
 end
+
+#========
+
+# Ichi & Mark
+def caesar_shift(offset, character)
+  ((((character.ord - 97) + offset) % 26) + 97).chr
+end
+
+def caesar_cipher(offset, string)
+  string.chars.map! do |x|
+    x == ' ' ? x : caesar_shift(offset, x)
+  end.join
+end
+
+#========
