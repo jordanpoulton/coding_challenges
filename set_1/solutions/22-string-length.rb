@@ -6,3 +6,9 @@ def length_finder(words)
   lengths
 end
 #============
+
+# Joe & Gus
+
+def length_finder(words)
+  words.map {|word| word.length}
+end
