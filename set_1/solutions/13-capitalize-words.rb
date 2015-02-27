@@ -1,3 +1,8 @@
+#Ilya and Pavel
+def capitalize_words(string)
+  string.split(" ").each { |word|  word.capitalize! }.join(" ")
+end
+
 #Jordan
 def capitalize_words(string)
   words = string.split(" ")

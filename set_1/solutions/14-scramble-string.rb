@@ -1,3 +1,12 @@
+# Pavel & Ilya
+def scramble_string(string, positions)
+  result = ""
+  positions.each do |index|
+    result += string[index]
+  end
+  result
+end
+
 #Jordan
 def scramble_string(string, positions)
   result = ""
@@ -33,9 +42,20 @@ def scramble_string(string, positions)
   return rstr
 end
 
+
 # Dan & Jade
 def scramble_string(string, positions)
   s = ''
   positions.each { |p| s << string[p]}
   s
 end
+
+# Ichi & Mark
+def scramble_string(string, positions)
+  new_string = []
+  string.chars.each_with_index do |char, index|
+    new_string.push(string[positions[index]])
+  end
+  return new_string.join
+end
+
