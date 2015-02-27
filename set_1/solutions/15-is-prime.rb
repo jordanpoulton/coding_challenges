@@ -1,3 +1,11 @@
+#Ilya and Pavel
+def is_prime?(number)
+  (2..Math.sqrt(number).to_i).each do |divisor| 
+    return false if number % divisor == 0
+  end
+  true
+end
+
 #Jordan
 def is_prime?(number)
   if number <= 1
