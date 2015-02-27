@@ -62,3 +62,13 @@ def count_vowels(string)
   end
   return count
 end
+
+# Ichi
+
+def count_vowels(string)
+  total_vowels = []
+  vowels = string.chars.each do |letter|
+    total_vowels.unshift(letter) if letter =~ /[aeiou]/
+  end
+  return total_vowels.count
+end

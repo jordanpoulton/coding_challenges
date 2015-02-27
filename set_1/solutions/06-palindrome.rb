@@ -28,3 +28,10 @@ def palindrome?(string)
   string == string.reverse
 end
 
+# Ichi
+
+def palindrome?(string)
+  word = string.split("")
+  word_reverse = word.reverse
+  true if word == word_reverse
+end
