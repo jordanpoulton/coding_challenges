@@ -62,6 +62,7 @@ def nth_prime(n)
   return pointer
 end
 
+
 # Jade & Dan
 
 def nth_prime(n)
@@ -74,5 +75,16 @@ def nth_prime(n)
     num += 1
   end
   return num - 1
+
+
+# Ichi & Mark
+def nth_prime(n)
+  prime_list = []
+  i = 1
+  while prime_list.length < n
+    prime_list.push(i) if is_prime?(i) == true
+    i += 1
+  end
+  return prime_list[n-1]
 end
 

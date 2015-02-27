@@ -11,3 +11,17 @@ def kaprekar?(k)
   return k == left + right
 end
 #===========
+
+# Joe and Gus
+
+def kaprekar?(num)
+  square = num ** 2
+  num_length = num.to_s.length
+  half1 = square / (10 ** (num_length))
+  half2 = square % (half1 * (10 ** (num_length)))
+  if half1 + half2 == num
+    return true
+  end
+
+  return false
+end
