@@ -1,3 +1,14 @@
+# Pavel & Ilya
+def dasherize_number(num)
+  array = num.to_s.split("")
+  (array.length).times do |e|
+      array[e] = "-#{array[e]}-" if array[e].to_i % 2 == 1
+  end
+  result = array.join("").gsub('--','-')
+  result = result[1..-1] if result[0] == "-"
+  result = result[0..-2] if result[-1] == "-" 
+end
+
 #Jordan
 def dasherize_number(num)
   num_s = num.to_s
@@ -100,3 +111,28 @@ return return_string
 
 end
 
+#Dan & Jade
+def dasherize_number(num)
+  list = num.to_s.split('').map! do |x|
+    if !(x.to_i % 2 == 0)
+      x = "-#{x}-"
+    else
+      x = x
+    end
+  end.join
+  if list[0] == '-'
+    list[0] = ''
+  end
+  if list[-1] == '-'
+    list[-1] = ''
+  end
+  list = list.split('')
+  list.each_index do |x|
+    if list[x] == '-' && list[x-1] == '-'
+      list.delete_at(x-1)
+    end
+  end
+  return list.join('')
+  
+
+end

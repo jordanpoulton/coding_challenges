@@ -27,3 +27,14 @@ def is_prime?(number)
   return true
 end
 #######==#≠#≠#≠#≠#≠#≠#≠##≠≠≠≠≠≠≠≠≠≠≠#====
+
+#Rob and Gus
+def is_prime?(number)
+  (2..number/2).each do |i|
+    if number % i == 0
+      return false
+    end
+  end
+
+  return true
+end

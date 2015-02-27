@@ -7,7 +7,7 @@ end
 def palindrome?(string)
   i = 0
   while i < string.length
-    if string[i] != string[(string.length - 1) - i]
+    if string[i] != string[(string.length - 1) - i] #Better solution string[-1-i]?
       return false
     end
 
@@ -28,3 +28,10 @@ def palindrome?(string)
   string == string.reverse
 end
 
+# Ichi
+
+def palindrome?(string)
+  word = string.split("")
+  word_reverse = word.reverse
+  true if word == word_reverse
+end

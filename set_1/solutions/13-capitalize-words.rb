@@ -70,3 +70,14 @@ def capitalize_words(string)
   words = string.split(' ')
   return words.collect(&:capitalize).join(' ')
 end
+#===========
+
+# Ichi & Mark
+def capitalize_words(string)
+  sentence = string.split(' ')
+  sentence = sentence.each do |word|
+    word[0] = word[0].upcase
+  end.join(' ')
+  return sentence
+end
+
