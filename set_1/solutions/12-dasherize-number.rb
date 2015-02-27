@@ -100,3 +100,28 @@ return return_string
 
 end
 
+#Dan & Jade
+def dasherize_number(num)
+  list = num.to_s.split('').map! do |x|
+    if !(x.to_i % 2 == 0)
+      x = "-#{x}-"
+    else
+      x = x
+    end
+  end.join
+  if list[0] == '-'
+    list[0] = ''
+  end
+  if list[-1] == '-'
+    list[-1] = ''
+  end
+  list = list.split('')
+  list.each_index do |x|
+    if list[x] == '-' && list[x-1] == '-'
+      list.delete_at(x-1)
+    end
+  end
+  return list.join('')
+  
+
+end
