@@ -74,3 +74,16 @@ def longest_palindrome(string)
     end
   end
 end
+
+# Ilya and Rob
+
+def longest_palindrome(string)
+  result = ""
+  (0..string.length).each do |i|
+    (i..string.length).each do |j|
+      sub = string.slice(i,j)
+      result = sub if j-i > result.length && palindrome?(sub)
+    end
+  end
+  result
+end
