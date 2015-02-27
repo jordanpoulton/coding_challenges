@@ -7,7 +7,7 @@ end
 def palindrome?(string)
   i = 0
   while i < string.length
-    if string[i] != string[(string.length - 1) - i]
+    if string[i] != string[(string.length - 1) - i] #Better solution string[-1-i]?
       return false
     end
 

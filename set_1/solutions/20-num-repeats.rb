@@ -55,3 +55,17 @@ def num_repeats(string)
 end
 
 #===========
+
+# Joe & Gus
+def num_repeats(string)
+  freq = Hash.new(0)
+  string.chars.each {|i| freq[i] += 1}
+
+  count = 0
+  freq.each do |k, v|
+    if v > 1
+      count += 1
+    end
+  end
+  return count
+end
