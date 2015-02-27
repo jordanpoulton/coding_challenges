@@ -1,6 +1,11 @@
+
 # Jade & Dan
 def capitalize_words(string)
   string.split(" ").map! {|x| x.capitalize}.join(" ")
+
+#Ilya and Pavel
+def capitalize_words(string)
+  string.split(" ").each { |word|  word.capitalize! }.join(" ")
 end
 
 #Jordan
@@ -30,14 +35,14 @@ def capitalize_words(string)
   end
   result.join(' ')
 end
-#===========
+
 
 #Rob and Gus
 def capitalize_words(string)
   words = string.split(' ')
   return words.collect(&:capitalize).join(' ')
 end
-#===========
+
 
 # Ichi & Mark
 def capitalize_words(string)
