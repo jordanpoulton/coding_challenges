@@ -46,3 +46,17 @@ def is_prime?(number)
 
   return true
 end
+
+#===========
+
+# Ichi & Mark
+def is_prime?(number)
+  return false if number == 0
+  i = 1
+  while i <= number
+    return false if number % i == 0 && i != 1 && i != number && number != 0
+    i += 1
+  end
+  return true
+end
+
