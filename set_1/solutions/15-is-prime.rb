@@ -1,6 +1,6 @@
 #Ilya and Pavel
 def is_prime?(number)
-  (2..Math.sqrt(number).to_i).each do |divisor| 
+  (2..Math.sqrt(number).to_i).each do |divisor|
     return false if number % divisor == 0
   end
   true
@@ -24,7 +24,7 @@ def is_prime?(number)
 
   return true
 end
-#===========
+
 #Mark 'n' Joe
 def is_prime?(number)
   (2...number).each do |factor|
@@ -34,7 +34,7 @@ def is_prime?(number)
   end
   return true
 end
-#######==#≠#≠#≠#≠#≠#≠#≠##≠≠≠≠≠≠≠≠≠≠≠#====
+
 
 #Rob and Gus
 def is_prime?(number)
@@ -45,4 +45,10 @@ def is_prime?(number)
   end
 
   return true
+end
+
+# Jade & Dan
+def is_prime?(number)
+  (2...number).each{|x| return false if number % x == 0}
+  true
 end

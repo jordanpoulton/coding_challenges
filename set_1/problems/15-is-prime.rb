@@ -13,6 +13,7 @@
 # Difficulty: medium.
 
 def is_prime?(number)
+
 end
 
 # These are tests to check that your code is working. After writing
