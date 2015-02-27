@@ -1,3 +1,8 @@
+# Rob & Ilya
+def num_repeats(string)
+  string.split("").select {|e| string.split("").count(e) > 1}.uniq.length
+end
+
 #Jordan
 def num_repeats(string)
   counts = []
