@@ -56,10 +56,10 @@ end
 
 #===========
 
-#Gus
+# Joe & Gus
 def num_repeats(string)
   freq = Hash.new(0)
-  string.chars.map {|i| freq[i] += 1}
+  string.chars.each {|i| freq[i] += 1}
 
   count = 0
   freq.each do |k, v|

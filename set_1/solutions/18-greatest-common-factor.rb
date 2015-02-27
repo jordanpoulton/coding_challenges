@@ -37,7 +37,7 @@ end
 
 #===========
 
-#Gus
+# Joe & Gus
 def greatest_common_factor(number1, number2)
   pointer = [number1, number2].min
   while pointer > 0

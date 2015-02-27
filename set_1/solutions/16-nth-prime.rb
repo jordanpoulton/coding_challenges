@@ -47,7 +47,7 @@ def nth_prime(n)
 end
 #===========
 
-#Gus
+# Joe & Gus
 
 def nth_prime(n)
   count = 0

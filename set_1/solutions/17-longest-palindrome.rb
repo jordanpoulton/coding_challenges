@@ -63,7 +63,7 @@ def longest_palindrome(string)
 end
 #================================
 
-#Gus
+# Joe & Gus
 
 def longest_palindrome(string)
   (1..string.length).reverse_each do |i|
