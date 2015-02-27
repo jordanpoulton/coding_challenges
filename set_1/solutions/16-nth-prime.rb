@@ -1,3 +1,23 @@
+# Pavel & Ilya
+def is_prime?(number)
+  (2..Math.sqrt(number).to_i).each do |divisor| 
+    return false if number % divisor == 0
+  end
+  true
+end
+
+def nth_prime(m)
+  prime_count = 0
+  i = 1 
+  loop do
+    if is_prime?(i) 
+      return i if prime_count == m
+      prime_count += 1
+    end
+    i+=1
+  end
+end
+
 #Jordan
 def is_prime?(number)
   if number <= 1
