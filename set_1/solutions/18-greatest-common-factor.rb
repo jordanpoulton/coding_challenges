@@ -1,12 +1,10 @@
 # Rob & Ilya 
 def greatest_common_factor(number1, number2)
-  while [number1, number2].max % [number1, number2].min != 0
-    min = [number1, number2].min
-    max = [number1, number2].max
-    number1 = min
-    number2 = max - min
+  if [number1, number2].max % [number1, number2].min == 0
+    return [number1, number2].min
+  else
+    greatest_common_factor([number1, number2].max, [number1, number2].max-[number1, number2].min)
   end
-  [number1, number2].min
 end
 
 def greatest_common_factor(number1, number2)
