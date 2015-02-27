@@ -33,7 +33,7 @@ def longest_palindrome(string)
 
   return best_palindrome
 end
-#===========
+
 #Mark n Joe
 def palindrome?(string)
   i = 0
@@ -61,7 +61,6 @@ def longest_palindrome(string)
   end
   pals.sort_by{|pal| pal.length}[-1]
 end
-#================================
 
 # Joe & Gus
 
@@ -74,6 +73,7 @@ def longest_palindrome(string)
     end
   end
 end
+
 
 # Jade & Dan
 
@@ -93,4 +93,16 @@ def longest_palindrome(string)
       return x
     end
   end
+
+# Ilya and Rob
+
+def longest_palindrome(string)
+  result = ""
+  (0..string.length).each do |i|
+    (i..string.length).each do |j|
+      sub = string.slice(i,j)
+      result = sub if j-i > result.length && palindrome?(sub)
+    end
+  end
+  result
 end

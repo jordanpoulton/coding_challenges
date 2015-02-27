@@ -1,3 +1,22 @@
+# Rob & Ilya 
+def greatest_common_factor(number1, number2)
+  while [number1, number2].max % [number1, number2].min != 0
+    min = [number1, number2].min
+    max = [number1, number2].max
+    number1 = min
+    number2 = max - min
+  end
+  [number1, number2].min
+end
+
+def greatest_common_factor(number1, number2)
+    (0..[number1,number2].min).reverse_each do |i|
+      if number1 % i == 0 && number2 % i == 0
+        return i
+      end
+    end
+end
+
 #Jordan
 def greatest_common_factor(number1, number2)
   # start i at smaller of number1, number2
