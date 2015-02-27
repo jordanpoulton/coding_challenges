@@ -62,3 +62,15 @@ def longest_palindrome(string)
   pals.sort_by{|pal| pal.length}[-1]
 end
 #================================
+
+#Gus
+
+def longest_palindrome(string)
+  (1..string.length).reverse_each do |i|
+    (0..(string.length - i)).each do |j|
+      if palindrome?(pal = string.slice(j, i))
+        return pal
+      end
+    end
+  end
+end
