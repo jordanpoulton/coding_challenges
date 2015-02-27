@@ -5,6 +5,15 @@
 # Difficulty: medium.
 
 def greatest_common_factor(number1, number2)
+	biggest = number1 > number2 ? number1 : number2
+	smallest = number1 < number2 ? number1 : number2
+	arr = []
+	(1..biggest).reverse_each do |n|
+		if (biggest % n == 0) && (smallest % n == 0)
+			return n 
+		end
+	end
+	print arr
 end
 
 # These are tests to check that your code is working. After writing

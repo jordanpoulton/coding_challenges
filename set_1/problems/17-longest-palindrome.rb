@@ -30,6 +30,10 @@ def palindrome?(string)
 end
 
 def longest_palindrome(string)
+    return string if palindrome?(string)
+
+    p palindrome?(string.slice(1,string.length))
+    
 end
 
 # These are tests to check that your code is working. After writing

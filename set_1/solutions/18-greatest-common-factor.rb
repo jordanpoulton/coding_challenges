@@ -35,7 +35,6 @@ def greatest_common_factor(number1, number2)
     i -= 1
   end
 end
-#===========
 
 # Joe & Mark
 def greatest_common_factor(number1, number2)
@@ -54,8 +53,6 @@ def greatest_common_factor(number1, number2)
   factors_of_both[-1]
 end
 
-#===========
-
 # Joe & Gus
 def greatest_common_factor(number1, number2)
   pointer = [number1, number2].min
@@ -64,6 +61,17 @@ def greatest_common_factor(number1, number2)
       return pointer
     else
       pointer -= 1
+    end
+  end
+end
+
+#Jade & Dan
+def greatest_common_factor(number1, number2)
+  biggest = number1 > number2 ? number1 : number2
+  smallest = number1 < number2 ? number1 : number2
+  (1..biggest).reverse_each do |n|
+    if (biggest % n == 0) && (smallest % n == 0)
+      return n 
     end
   end
 end
