@@ -32,7 +32,7 @@ def nth_prime(n)
     i += 1
   end
 end
-#===========
+
 # Joe & Mark
 def nth_prime(n)
   i = 0
@@ -45,7 +45,7 @@ def nth_prime(n)
   end
   return num - 1
 end
-#===========
+
 
 # Joe & Gus
 
@@ -61,3 +61,18 @@ def nth_prime(n)
 
   return pointer
 end
+
+# Jade & Dan
+
+def nth_prime(n)
+  i = 0
+  num = 1
+  while i < n
+    if is_prime?(num)
+      i += 1
+    end
+    num += 1
+  end
+  return num - 1
+end
+
