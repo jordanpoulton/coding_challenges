@@ -87,3 +87,26 @@ def longest_palindrome(string)
   end
   result
 end
+
+# Ichi & Mark
+def longest_palindrome(string)
+  n = 0
+  pal = []
+  while n <= string.length - 1
+    m = 2
+    while m <= string.length - n
+      pal_comb = string.slice(n, m)
+      pal.push(pal_comb) if palindrome?(pal_comb) == true
+      m += 1
+    end
+    n += 1
+  end
+  longest_pal = ""
+  pal.each do |x|
+    if x.length > longest_pal.length
+      longest_pal = x
+    end
+  end
+  return longest_pal
+end
+
