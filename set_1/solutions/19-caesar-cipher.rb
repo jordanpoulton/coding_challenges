@@ -40,3 +40,16 @@ def caesar_cipher(offset, string)
   string.join('')
 end
 #====================
+
+#Gus
+def caesar_cipher(offset, string)
+  (0...string.length).each do |i|
+    val = string[i].ord
+    if val >= 97 && val <= 122
+      coded_val = ((val + offset - 97) % 26) + 97
+      string[i] = coded_val.chr
+    end
+  end
+
+  return string
+end
