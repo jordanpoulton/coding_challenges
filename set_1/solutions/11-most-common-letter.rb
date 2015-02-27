@@ -53,3 +53,13 @@ def most_common_letter(string)
   freq = count.sort_by {|k, v| v}
   freq.last
 end
+
+# Jade & Dan
+def most_common_letter(string)
+  letters = Hash.new 0
+  string.chars { |ch| letters[ch] += 1} 
+  
+  [letters.select {|key,value| value == letters.values.max}.keys[0],
+    letters.select {|key,value| value == letters.values.max}.values[0]] 
+   
+end
