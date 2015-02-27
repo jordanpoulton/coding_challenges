@@ -1,40 +1,7 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Jade & Dan
+def capitalize_words(string)
+  string.split(" ").map! {|x| x.capitalize}.join(" ")
+end
 
 #Jordan
 def capitalize_words(string)
