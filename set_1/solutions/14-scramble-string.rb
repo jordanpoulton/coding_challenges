@@ -10,7 +10,6 @@ def scramble_string(string, positions)
 
   return result
 end
-#===========
 
 # Joe & Mark
 def scramble_string(string, positions)
@@ -22,7 +21,7 @@ def scramble_string(string, positions)
   result.join('')
 end
 
-#===========
+
 
 # Gus and Rob
 
@@ -32,4 +31,11 @@ def scramble_string(string, positions)
     rstr += string[p]
   end
   return rstr
+end
+
+# Dan & Jade
+def scramble_string(string, positions)
+  s = ''
+  positions.each { |p| s << string[p]}
+  s
 end
